@@ -6,13 +6,22 @@
 body {
     margin: 0 auto;
     max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Source Serif Pro', serif;
+    color: black;
+    background-color: white;
 }
 ul {
     list-style: none;
     padding-left: 0;
 }
+/* Might add a color variable to the "a" tag */
 a {
     text-decoration: none;
+    text-transform: uppercase;
+    color: white;
 }
 nav {
     font-family: 'Source Serif Pro', serif;
@@ -20,6 +29,15 @@ nav {
     letter-spacing: .05em;
     background-color: #829356;
     padding: 25px;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding: 0 20px;
+    height: 100px;
+    background-color: #107896;
 }
 h1, .top-nav {
     text-align: center;
@@ -74,10 +92,20 @@ h1 a, .top-nav a {
 .box-6 {
     background-color: #9a2617;
 }
+.full {
+    display: none;
+}
 
 
             /*  media classes for device types  */
 @media (min-width: 768px) {
+    .top {
+        display: none;
+    }
+    .full {
+        display: inline-block;
+        margin-left: 20px;
+    }
     .top-nav {
         margin-top: 0;
     }
@@ -93,6 +121,13 @@ h1 a, .top-nav a {
     .top-nav a {
         color: #fff
     }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .col {
+        flex-basis: calc(50% - 20px);
+    }
 }
 @media (min-width: 1024px) {
     nav {
@@ -105,17 +140,6 @@ h1 a, .top-nav a {
         width: initial;
         margin-bottom: 0;
     }
-}
-@media (min-width: 768px) {
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .col {
-        flex-basis: calc(50% - 20px);
-    }
-}
-@media (min-width: 1024px) {
     .col {
         flex-basis: calc(33.333% - 20px);
     }
