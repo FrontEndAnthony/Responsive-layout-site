@@ -73,8 +73,9 @@ h2, .top-nav a {
     color: white;
     text-align: center;
     letter-spacing: 1px;
-    padding-top: 5px;
+    padding-top: 5px;   
 }
+
 .box-1 {
     background-color: #093145;
 }
@@ -104,7 +105,6 @@ h2, .top-nav a {
 }
 .info {
     display: flex; 
-    flex-direction: column;
     justify-content: center;
     text-align: center;
     padding: 10px;
@@ -112,9 +112,6 @@ h2, .top-nav a {
 
 
             /*  media classes for device types  */
-/* @media (min-width: 320px) {
-
-} */
 
 
 @media (min-width: 768px) {
@@ -165,5 +162,6 @@ h2, .top-nav a {
     .container, .skills {
         display: flex;
         justify-content: center;
+        
     }
 }
