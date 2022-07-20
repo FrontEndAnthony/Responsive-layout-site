@@ -4,12 +4,24 @@
 }
 body {
     padding: 5%;
+
+}
+.bio-box {
+    display: flex;
+    flex-direction: column;
 }
 .profile-pic {
-    padding-top: 35px;
+    padding-top: 60px;
 }
 ul {
     padding-left: 0;
+}
+nav {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 400;
+    letter-spacing: .05em;
+    background-color: #829356;
+    padding: 25px;
 }
  li, h2 {
     list-style: none;
@@ -44,10 +56,12 @@ a:hover {
     padding-bottom: 10%;
 }
 #portfolio {
-    padding: 40px;
+    text-align: center;
+    font-size: 22px;
+    padding-top: 50px;
 }
 .box {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 footer {
     display: flex;
@@ -55,7 +69,80 @@ footer {
     justify-content: space-between;
     border-top: solid grey 1px;
     padding-top: 10px;
+}
+/* footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding: 0 20px;
+    height: 100px;
+    background-color: #107896;
+} */
 
+@media screen and (min-width: 768px) {
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        width: 350px;
+        margin: auto;
+    }
+    .bio-box {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .profile.pic {
+        padding-top: 0;
+        width: 44%;
+        height: auto;
+    }
+    .bio {
+        width: 54%;
+        text-align: start;
+        padding-top: 50px;
+        font-size: 28px;
+        padding-right: 25px;
+    }
+    .portfolio-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+
+        /* flex-direction: row;
+        width: 42%;
+        padding: 0 40px 0 40px;
+        justify-content: center; */
+    }
+    .box {
+        float: left;
+        width: 45%;
+        margin: auto;
+      }
+    /* .box:nth-child(even) {
+        margin-right: 7%;
+    } */
+    .box-text {
+        /* padding: 20px 20px; */
+    }
+
+      @media (min-width: 1024px) {
+        .portfolio-container {
+            flex-basis: calc(33.333% - 20px);
+          }
+      }
+    /* .box {
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: row;
+       width: 42%;
+       padding: 0 40px 0 40px;
+       justify-content: center;
+    } */
+    /* * {
+        display: flex;
+        margin: auto;
+        width: 400px;
+    } */
 }
 /* * {
     box-sizing: border-box;
