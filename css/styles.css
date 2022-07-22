@@ -6,7 +6,6 @@ body {
     padding: 5%;
     background-color: rgb(206, 206, 206);
     /* height: 100vh; */
-    max-width: 100%;
 }
 .bio-box {
     display: flex;
@@ -18,14 +17,28 @@ body {
     justify-content: end;
 }
 .profile-pic {
-    padding-top: 60px;
+    max-width: 30vh;
+    justify-content: center;
+    align-self: center;
+    border-radius: 50%;
+}
+.bio {
+    margin: 30px;
+    font-size: 16px;
+}
+.nav-links {
+    display: inline-block;
 }
 ul {
     padding-left: 0;
+
+}
+li {
+    padding: 3px;
 }
 .nav-box {
     margin: 15px;
-    background-color: rgb(255, 255, 255);
+    
 }
 nav {
     display: flex;
@@ -43,11 +56,14 @@ nav {
     align-content: center;
     justify-content: space-between;
  }
+ .home-link {
+    background-color: white;
+ }
 #top {
     font-size: 30px;
     text-transform: uppercase;
  }
-img {
+img .port {
     max-width: 100%;
 }
 .title {
@@ -99,6 +115,9 @@ footer {
     }
     .bio-box {
         display: flex;
+    }
+    /* .bio-box {
+        display: flex;
         flex-direction: row-reverse;
         align-items: center;
         padding-right: 10%;
@@ -114,7 +133,7 @@ footer {
         padding-top: 50px;
         font-size: 28px;
         padding-right: 25px;
-    }
+    } */
     /* .profile-pic, .bio {
         flex-direction: column-reverse;
         justify-content: space-between;
