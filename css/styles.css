@@ -3,8 +3,8 @@
     text-align: center;
 }
 body {
-    padding: 5%;
-    background-color: rgb(206, 206, 206);
+    padding: 2%;
+    background-color: rgba(242, 160, 160, 0.368);
     /* height: 100vh; */
 }
 .bio-box {
@@ -17,7 +17,7 @@ body {
     justify-content: end;
 }
 .profile-pic {
-    max-width: 30vh;
+    max-width: 33vh;
     justify-content: center;
     align-self: center;
     border-radius: 50%;
@@ -45,7 +45,6 @@ nav {
     letter-spacing: .05em;
     background-color: #829356;
     padding: 25px;
-    
 }
 .nav li, h2 {
     list-style: none;
@@ -90,12 +89,19 @@ a:hover {
 .box {
     padding-bottom: 30px;
 }
+.port {
+    max-width: 42vh;
+    justify-content: center;
+    align-self: center;
+    border-radius: 13%;
+}
+
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-top: solid grey 1px;
-    background-color: beige;
+    background-color: rgba(231, 182, 182, 0.477);
     font-family: 'Source Serif Pro', serif;
     text-align: center;
     
@@ -106,6 +112,10 @@ footer {
 .footer-nav {
     display: none;
 }
+
+
+/* Media types */
+
 
 @media screen and (min-width: 768px) {
     .nav {
