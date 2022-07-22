@@ -145,7 +145,14 @@ footer {
         margin: auto;
     }
     .bio-box {
-        display: flex;
+        flex-direction: row-reverse;
+    }
+    .bio {
+        margin: 22px;
+        font-size: 26px;
+    }
+    .profile-pic {
+        margin: auto;
     }
     .portfolio-container {
         display: flex;
