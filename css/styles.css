@@ -18,9 +18,12 @@ body {
 }
 .profile-pic {
     max-width: 33vh;
+    margin-top: 5px;
     justify-content: center;
     align-self: center;
-    border-radius: 50%;
+    outline-style: inset;
+    outline-color: lightgrey;
+    outline-width: 9px;
 }
 .bio {
     margin: 30px;
@@ -79,12 +82,12 @@ a:hover {
 .portfolio-container {
     padding-top: 10%;
     padding-bottom: 10%;
-    
+    margin: 1px;
+    background-color:rgba(231, 182, 182, 0.105);
 }
 #portfolio {
-    text-align: center;
     font-size: 22px;
-    padding-top: 50px;
+    margin-top: 64px;
 }
 .box {
     padding-bottom: 30px;
@@ -95,7 +98,24 @@ a:hover {
     align-self: center;
     border-radius: 13%;
 }
-
+#skills {
+    font-size: 22px;
+}
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.skills-container {
+    padding-top: 10%;
+    padding-bottom: 10%;   
+}
+.port-javascript {
+    max-width: 33vh;
+    justify-content: center;
+    align-self: center;
+    border-radius: 13%;
+}
 footer {
     display: flex;
     justify-content: space-between;
@@ -127,32 +147,6 @@ footer {
     .bio-box {
         display: flex;
     }
-    /* .bio-box {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        padding-right: 10%;
-    }
-    .profile.pic {
-        padding-top: 0;
-        width: 44%;
-        height: auto;
-    }
-    .bio {
-        width: 54%;
-        text-align: start;
-        padding-top: 50px;
-        font-size: 28px;
-        padding-right: 25px;
-    } */
-    /* .profile-pic, .bio {
-        flex-direction: column-reverse;
-        justify-content: space-between;
-        align-self: center;
-        flex-wrap: wrap;
-        max-width: 44%;
-        
-    } */
     .portfolio-container {
         display: flex;
         flex-wrap: wrap;
