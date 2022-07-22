@@ -31,14 +31,12 @@ body {
 }
 ul {
     padding-left: 0;
-
 }
 li {
     padding: 3px;
 }
 .nav-box {
     margin: 15px;
-    
 }
 nav {
     display: flex;
@@ -56,8 +54,10 @@ nav {
     align-content: center;
     justify-content: space-between;
  }
- .home-link {
+ .home-link, .portfolio-link, .contact-link, .skills-link {
     background-color: white;
+    padding: 6px;
+    margin: 5px;
  }
 #top {
     font-size: 30px;
@@ -71,6 +71,7 @@ img .port {
 }
 a {
     text-decoration: none;
+    color: black;
 }
 a:hover {
     text-decoration: underline;
