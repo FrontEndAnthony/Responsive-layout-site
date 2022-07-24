@@ -2,7 +2,6 @@
     font-family: 'Source Serif Pro', serif;
     text-align: center;
     padding: 0;
-    margin: 0;
     box-sizing: border-box;
 }
 body {
@@ -48,14 +47,14 @@ nav {
     background-color: #829356;
     padding: 25px;
 }
-.nav li, h2 {
+#nav li, h2 {
     list-style: none;
     text-transform: uppercase;
     font-size: 18px;
     align-content: center;
     justify-content: space-between;
  }
- .home-link, .portfolio-link, .contact-link, .skills-link {
+.home-link, .portfolio-link, .contact-link, .skills-link {
     background-color: white;
     padding: 6px;
     margin: 5px;
@@ -81,7 +80,6 @@ a:hover {
 .portfolio-container {
     padding-top: 10%;
     margin: 1px;
-    background-color:rgba(231, 182, 182, 0.105);
 }
 #portfolio {
     font-size: 22px;
@@ -141,25 +139,22 @@ footer {
 
 
 @media screen and (min-width: 768px) {
-    * {
-
-    }
     body {
-        width: 100vw;
+        width: 99vw;
+        overflow-x: hidden;
     }
     .nav-box {
         background-color: white;
         /* min-width: 100vw; */
         margin: 0;
-        /* width: 800px; */
     }
-    .nav {
+    #nav {
         display: flex;
         justify-content: center;
     }
     .bio-box {
         flex-direction: row-reverse;
-        margin: 2vw;
+        margin: 4vw;
     }
     .bio {
         margin: 22px;
@@ -169,16 +164,23 @@ footer {
     .profile-pic {
         margin: auto;
     }
+    #portfolio {
+        display: flex;
+        justify-content: center;
+    }
     .portfolio-container {
         display: flex;
         flex-wrap: wrap;
         padding-bottom: 30px;       
     }
-    /* h2 {
-        display: flex;
-        justify-content: center;
-        width: 800px;
-    } */
+    .box-text {
+        align-items: center;
+    }
+    .box {
+        float: left;
+        width: 45%;
+        margin: 2vw;
+    }
     .skills-container {
         display: flex;
         flex-wrap: wrap;
@@ -187,40 +189,41 @@ footer {
         max-width: 90%;
         padding-left: 76px;
     }
-    .box {
-        float: left;
-        width: 45%;
-        margin: auto;
-      }
-      .contact-text {
+    .contact-text {
         margin-bottom: 50px;
-      }
-      .phone {
+    }
+    .phone {
         padding: 6px;
-      }
-      .email {
+    }
+    .email {
         padding-bottom: 20px;
-      }
-      .top {
+    }
+    .top {
         display: none;
-      }
-      .footer-nav {
+    }
+    .footer-nav {
         display: flex;
         font-family: 'Source Serif Pro', serif;
         text-align: center;
-      }
-      .footer-nav li {
+    }
+    .footer-nav li {
         list-style: none;
         padding-left: 20px;
         text-transform: uppercase;
-      }
+    }
 }
 
 @media (min-width: 1024px) {
+    .body {
+        width: 100vw;
+    }
+
     .portfolio-container {
         flex-basis: calc(33.333% - 20px);
     }
-    .body {
-
+    .box-1, .box-2, .box-3 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
