@@ -12,6 +12,9 @@ body {
     display: flex;
     flex-direction: column;
 }
+.color-box {
+    background-color: lightblue;
+}
 .portfolio {
     display: flex;
     align-items: center;
@@ -38,14 +41,6 @@ li {
 }
 .nav-box {
     margin: 15px;
-}
-nav {
-    display: flex;
-    font-family: 'Source Serif Pro', serif;
-    font-weight: 400;
-    letter-spacing: .05em;
-    background-color: #829356;
-    padding: 25px;
 }
 #nav li, h2 {
     list-style: none;
@@ -144,7 +139,7 @@ footer {
         overflow-x: hidden;
     }
     .nav-box {
-        background-color: rgb(255, 255, 255);
+        background-color: transparent;
         /* min-width: 100vw; */
         margin: 0;
     }
@@ -217,17 +212,30 @@ footer {
 }
 
 @media (min-width: 1024px) {
+    .nav-box {
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        position: absolute;
+        top: 0;
+        background-color: transparent;
+    }
+    .bio-box {
+        padding: 2%;
+    }
     .body {
         width: 100vw;
     }
-
+    .portfolio-container {
+        padding: 0;
+    }
     .portfolio-container {
         flex-basis: calc(33.333% - 20px);
     }
-    .port-1, .port-2, .port-3 {
+    .port {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 30vw;
+        max-width: 30vw;
     }
 }
