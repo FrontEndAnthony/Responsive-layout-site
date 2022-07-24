@@ -144,13 +144,16 @@ footer {
         overflow-x: hidden;
     }
     .nav-box {
-        background-color: white;
+        background-color: rgb(255, 255, 255);
         /* min-width: 100vw; */
         margin: 0;
     }
     #nav {
         display: flex;
         justify-content: center;
+    }
+    .home-link, .portfolio-link, .contact-link, .skills-link {
+        background-color: transparent;
     }
     .bio-box {
         flex-direction: row-reverse;
@@ -221,9 +224,10 @@ footer {
     .portfolio-container {
         flex-basis: calc(33.333% - 20px);
     }
-    .box-1, .box-2, .box-3 {
+    .port-1, .port-2, .port-3 {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        width: 30vw;
     }
 }
