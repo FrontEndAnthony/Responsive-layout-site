@@ -243,6 +243,11 @@ footer {
         justify-content: center;
         padding: 0;
     }
+    .box-skill {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
     .box-7, .box-8 {
         padding: 1px;
         flex-basis: calc(45% - 20px);
