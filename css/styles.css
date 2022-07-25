@@ -84,7 +84,7 @@ a:hover {
     padding-bottom: 30px;
 }
 .port {
-    max-width: 42vh;
+    max-width: 92%;
     justify-content: center;
     align-self: center;
     border-radius: 13%;
@@ -180,6 +180,7 @@ footer {
     }
     .skills-container {
         display: flex;
+        max-width: 85vw;
     }
     .box-skill {
 
