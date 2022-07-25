@@ -95,7 +95,7 @@ a:hover {
 .skills {
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
 }
 .skills-container {
     padding-top: 10%;
@@ -180,7 +180,15 @@ footer {
     }
     .skills-container {
         display: flex;
-        flex-wrap: wrap;
+    }
+    .box-skill {
+
+    }
+    .skills {
+        justify-content: center;
+    }
+    .text-skills {
+        margin: 0;
     }
     .contact-box {
         max-width: 90%;
