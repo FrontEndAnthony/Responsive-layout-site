@@ -140,7 +140,6 @@ footer {
     }
     .nav-box {
         background-color: transparent;
-        /* min-width: 100vw; */
         margin: 0;
     }
     #nav {
@@ -256,15 +255,9 @@ footer {
         margin: 10% auto 0 auto;
         text-align: center;
     }
-
-    /* .portfolio-container {
-        flex-basis: calc(33.333% - 20px);
-    } */
     .box {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        /* max-width: 27vw; */
-        /* flex-basis: calc(33.333% - 20px); */
     }
 }
