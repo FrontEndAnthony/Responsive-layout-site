@@ -84,7 +84,7 @@ a:hover {
     padding-bottom: 30px;
 }
 .port {
-    max-width: 92%;
+    max-width: 100%;
     justify-content: center;
     align-self: center;
     border-radius: 13%;
@@ -188,7 +188,7 @@ footer {
         justify-content: center;
     }
     .text-skills {
-        margin: 0 10%;
+        margin: 5% 10%;
     }
     .contact-box {
         max-width: 90%;
@@ -267,5 +267,6 @@ footer {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        width: 282px;
     }
 }
