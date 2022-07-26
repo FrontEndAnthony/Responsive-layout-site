@@ -180,16 +180,15 @@ footer {
     }
     .skills-container {
         display: flex;
-        max-width: 85vw;
     }
     .box-skill {
-
+        width: 50%;
     }
     .skills {
         justify-content: center;
     }
     .text-skills {
-        margin: 0;
+        margin: 0 10%;
     }
     .contact-box {
         max-width: 90%;
